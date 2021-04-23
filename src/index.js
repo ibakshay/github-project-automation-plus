@@ -15,7 +15,7 @@ const generateMutationQuery = require('./generate-mutation-query');
 		// Get data from the current action
 		const {eventName, nodeId, url} = getActionData(github.context);
 
-		core.debug("akshay print log")
+		core.debug(url)
 
 		// Create a method to query GitHub
 		const octokit = new github.GitHub(token);
